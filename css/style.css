@@ -359,3 +359,7 @@
     font-family: 'Grandstander', cursive;
     color: rgb(41, 43, 155);
 }
+
+.form-check .form-check-label {
+    font-size: 0.8rem;
+}

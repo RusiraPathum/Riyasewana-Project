@@ -60,96 +60,148 @@
         <form class="ml-5 mb-5">
             <div class="form-group">
                 <label for="exampleFormControlFile1">Uplod 5 or more photo </label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                <input type="file" class="form-control-file" id="imageuplod">
             </div>
         </form>
-        <form class="">
+        <form class="input_form">
             <!--1-->
             <div class="form-row">
                 <div class="col-md-6 mb-5 pr-5 pl-5">
-                    <label for="validationDefault04">State</label>
-                    <select class="custom-select ml-" id="validationDefault04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>...</option>
+                    <label for="validationDefault04">Vehicle Type <span class="text-danger">*</span> </label>
+                    <select class="custom-select ml-2" id="vehicleType">
+                        <option selected disabled value="">Select Type</option>
+                        <option class="item">Toyota</option>
+                        <option class="item">Suzuki</option>
+                        <option class="item">Honda</option>
+                        <option class="item">Nissan</option>
+                        <option class="item">Mitsubishi</option>
+                        <option class="item">Maruti</option>
+                        <option class="item">Hyundai</option>
+                        <option class="item">Mazda</option>
+                        <option class="item">BMW</option>
                     </select>
                 </div>
                 <div class="col-md-6 mb-5 pr-5 pl-5">
-                    <label for="validationDefault04">State</label>
-                    <select class="custom-select ml-" id="validationDefault04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>...</option>
+                    <label for="validationDefault04">Vehicle Condition <span class="text-danger">*</span></label>
+                    <select class="custom-select ml-2" id="vehicleCondition">
+                        <option selected disabled value="">Select Conditin</option>
+                        <option>Antique</option>
+                        <option>Brand New</option>
+                        <option>Registered (Used)</option>
+                        <option>Unresgistered (Recondition)</option>
                     </select>
                 </div>
             </div>
             <!--2-->
             <div class="form-row">
                 <div class="col-md-6 mb-5 pr-5 pl-5">
-                    <label for="validationDefault04">State</label>
-                    <select class="custom-select" id="validationDefault04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>...</option>
+                    <label for="validationDefault04">Vehicle Make <span class="text-danger">*</span></label>
+                    <select class="custom-select ml-2" id="vehicleMake">
+                        <option selected disabled value="">Select Make</option>
+                        <option>Acura</option>
+                        <option>Alfa-Romeo</option>
+                        <option>Aprilia</option>
+                        <option>Ashok-Leyland</option>
+                        <option>Aston</option>
+                        <option>Atco</option>
+                        <option>Audi</option>
+                        <option>Austin</option>
+                        <option>Bajaj</option>
+                        <option>Bentley</option>
+                        <option>BMW</option>
+                        <option>Cadillac</option>
                     </select>
                 </div>
                 <div class="col-md-6 mb-5 pr-5 pl-5">
-                    <label for="validationDefault02">State</label>
-                    <input type="text" class="form-control ml-" id="username" required="required">
+                    <label for="validationDefault02">Model <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control ml-2" id="model" placeholder="Model">
                 </div>
             </div>
             <!--3-->
             <div class="form-row">
                 <div class="col-md-6 mb-5 pr-5 pl-5">
-                    <label for="validationDefault04">State</label>
-                    <select class="custom-select ml-" id="validationDefault04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>...</option>
+                    <label for="validationDefault04">Manufacture Year <span class="text-danger">*</span></label>
+                    <select class="custom-select ml-2" id="manufactureYear">
+                        <option selected disabled value="">Select Manufacture Year</option>
+                        <option>2020</option>
+                        <option>2019</option>
+                        <option>2018</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                        <option>2013</option>
+                        <option>2012</option>
+                        <option>2011</option>
+                        <option>2010</option>
+                        <option>2009</option>
+                        <option>2008</option>
+                        <option>2007</option>
+                        <option>2006</option>
+                        <option>2005</option>
+                        <option>2004</option>
+                        <option>2003</option>
+                        <option>2002</option>
+                        <option>2001</option>
+                        <option>Befor 2000</option>
+
                     </select>
                 </div>
                 <div class="col-md-6 mb-5 pr-5 pl-5">
-                    <label for="validationDefault04">State</label>
-                    <select class="custom-select" id="validationDefault04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>...</option>
-                    </select>
+                    <label for="validationDefault02">Price<span class="text-danger">*</span></label>
+                    <div class="input-group-prepend ml-2">
+                        <div class="input-group-text float-right">RS</div>
+                        <input type="text" class="form-control " id="price" placeholder="Price">
+                    </div>
                 </div>
             </div>
             <!--4-->
             <div class="form-row">
                 <div class="col-md-6 mb-5 pr-5 pl-5">
-                    <label for="validationDefault04">State</label>
-                    <select class="custom-select" id="validationDefault04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>...</option>
+                    <label for="validationDefault04">Transmission <span class="text-danger">*</span></label>
+                    <select class="custom-select ml-2" id="transmission">
+                        <option selected disabled value="">Select Transmission</option>
+                        <option>Manual</option>
+                        <option>Automatic</option>
                     </select>
                 </div>
                 <div class="col-md-6 mb-5 pr-5 pl-5">
-                    <label for="validationDefault04">State</label>
-                    <select class="custom-select" id="validationDefault04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>...</option>
+                    <label for="validationDefault04">Fuel Type <span class="text-danger">*</span></label>
+                    <select class="custom-select ml-2" id="fuelType">
+                        <option selected disabled value="">Select Fuel Type</option>
+                        <option>Diesel</option>
+                        <option>Petrol</option>
+                        <option>Electric</option>
+                        <option>Hybrid</option>
+                        <option>Gas</option>
                     </select>
                 </div>
             </div>
             <!--5-->
             <div class="form-row">
                 <div class="col-md-6 mb-5 pr-5 pl-5">
-                    <label for="validationDefault02">State</label>
-                    <input type="text" class="form-control" id="validationDefault02" required>
+                    <label for="validationDefault02">Engine Capacity <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control ml-2" placeholder="Engine Capacity" id="engineCapacity">
                 </div>
                 <div class="col-md-6 mb-3 pr-5 pl-5">
-                    <label for="validationDefault02">State</label>
-                    <input type="text" class="form-control" id="validationDefault02" required>
+                    <label for="validationDefault02">Mileage<span class="text-danger">*</span></label>
+                    <div class="input-group-prepend">
+                        <input type="text" class="form-control ml-2" id="mileage" placeholder="Mileage">
+                        <div class="input-group-text float-right">KM</div>
+                    </div>
                 </div>
+
             </div>
             <!--6-->
             <div class="form-row pr-5 pl-5">
                 <div class="col-md-6 mb-3 check-box">
-                    <label for="validationDefault02" class="lable-1">State</label>
+                    <label for="validationDefault02" class="lable-1">Options <span class="text-danger">*</span></label>
                     <div class="row ml-5">
                         <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
                                 <label class="form-check-label" for="invalidCheck2">
-                                    Agree
+                                    AIR CONDITION
                                 </label>
                             </div>
                         </div>
@@ -157,7 +209,7 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
                                 <label class="form-check-label" for="invalidCheck2">
-                                    Agree
+                                    POWER STEERING
                                 </label>
                             </div>
                         </div>
@@ -167,7 +219,7 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
                                 <label class="form-check-label" for="invalidCheck2">
-                                    Agree
+                                    POWER MIRROR
                                 </label>
                             </div>
                         </div>
@@ -175,25 +227,7 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
                                 <label class="form-check-label" for="invalidCheck2">
-                                    Agree
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row ml-5">
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
-                                <label class="form-check-label" for="invalidCheck2">
-                                    Agree
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
-                                <label class="form-check-label" for="invalidCheck2">
-                                    Agree
+                                    POWER WINDOW
                                 </label>
                             </div>
                         </div>
@@ -201,9 +235,9 @@
                 </div>
 
             </div>
-            <div class="col-md-6 mb-3 p-5">
-                <label for="validationDefault02">State</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" required></textarea>
+            <div class="col-md-6 mb-3 p-5 ml-2">
+                <label for="validationDefault02">Description: ( 5000 / ) <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="description" rows="6" placeholder="Put correct address and Land phone number"></textarea>
             </div>
 
             <div class="sumbutton">
@@ -325,22 +359,57 @@
     <script src="./vender/bootstrap/js/bootstrap.js "></script>
     <script src="./vender/bootstrap/js/bootstrap.bundle.min.js "></script>
 
+    <!-- Popup js -->
     <script>
         function popUp() {
 
-            var username;
+            var imageuplod;
+            var vehicleType;
+            var vehicleCondition;
+            var vehicleMake;
+            var model;
+            var manufactureYear;
+            var price;
+            var transmission;
+            var fuelType;
+            var engineCapacity;
+            var mileage;
+            var description;
 
-            var username = document.getElementById('username').value;
+            var imageuplod = document.getElementById('imageuplod').value;
+            var vehicleType = document.getElementById('vehicleType').value;
+            var vehicleCondition = document.getElementById('vehicleCondition').value;
+            var vehicleMake = document.getElementById('vehicleMake').value;
+            var model = document.getElementById('model').value;
+            var manufactureYear = document.getElementById('manufactureYear').value;
+            var price = document.getElementById('price').value;
+            var transmission = document.getElementById('transmission').value;
+            var fuelType = document.getElementById('fuelType').value;
+            var engineCapacity = document.getElementById('engineCapacity').value;
+            var mileage = document.getElementById('mileage').value;
+            var description = document.getElementById('description').value;
 
-            if (username == null || username == "") {
+
+            if (imageuplod == null || imageuplod == "" ||
+                vehicleType == null || vehicleType == "" ||
+                vehicleCondition == null || vehicleCondition == "" ||
+                vehicleMake == null || vehicleMake == "" ||
+                model == null || model == "" ||
+                manufactureYear == null || manufactureYear == "" ||
+                price == null || price == "" ||
+                transmission == null || transmission == "" ||
+                fuelType == null || fuelType == "" ||
+                engineCapacity == null || manufactureYear == "" ||
+                mileage == null || mileage == "" ||
+                description == null || description == "") {
                 sweetAlert("Oops...", "Some details are missing, Please fill!", "error");
             } else {
                 swal("Successfull!", "Your Vehicle Add to Our System!", "success");
             }
-
         }
     </script>
 
+    <!--Back to up js-->
     <script>
         const scrollUp = document.querySelector('.scrollUp');
         window.addEventListener('scroll', () => {
@@ -351,15 +420,18 @@
             }
         });
     </script>
+
+    <!--Copy Right js-->
     <script>
         $('#year').text(new Date().getFullYear());
-
         $('.carousel').carousel({
             interval: 2500,
             pus: 'hover'
         });
     </script>
 </body>
+
+</html>
 
 </html>
 
