@@ -20,7 +20,7 @@
 <body>
 
     <!--Start Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="form-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="form-navbar">
         <div class="container">
             <a class="navbar-brand" href="homepage.html"><span class="other">RIYASEWANA</span></a>
             <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@
 
     <br><br>
     <!--Start Add Photo Section-->
-    <section class="container add-photo-sec mt-5 col-lg-6 col-md-6">
+    <section class="container add-photo-sec mt=2 col-lg-6 col-md-6">
         <h1 class="text-center">Post Free Vehicl AD</h1>
         <hr class="mb-5">
     </section>
@@ -210,20 +210,15 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="col-md-6 mb-3 p-5 ml-2">
                 <label for="validationDefault02">Description: ( 5000 / ) <span class="text-danger">*</span></label>
                 <textarea class="form-control" id="description" rows="6" placeholder="Put correct address and Land phone number"></textarea>
             </div>
-
-            <div class="sumbutton">
-                <nput type="submit" onclick="popUp()" class="btn btn-primary align-right float-right mr-5" type="submit">Submit
+            <div class="sumbutton mb-5">
+                <nput type="submit" onclick="popUp()" class="btn  align-right float-right mr-5" type="submit">Save & Continue
                     </nputtype="submit">
             </div>
-
-
-
         </form>
     </section>
     <!--End Form Section-->
@@ -251,10 +246,10 @@
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold ">Useful links</h6>
                     <p>
-                        <a class="text-decoration-none" href="#!">Home</a>
+                        <a class="text-decoration-none" href="homepage.html">Home</a>
                     </p>
                     <p>
-                        <a class="text-decoration-none" href="#!">Post a Ad Free </a>
+                        <a class="text-decoration-none" href="addpost.html">Post a Ad Free </a>
                     </p>
                     <p>
                         <a class="text-decoration-none" href="#!">Contact us</a>
@@ -333,12 +328,19 @@
     <!--End Footer Section -->
 
 
+    <!--Start back to up button-->
+    <a href="#" class="scrollUpButton">&#9650</a>
+    <!--End back to up button-->
+
 
     <script src="http://cdnjs.cloudflare.com/ajaxlibs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./vender/jquery/jquery.min.js "></script>
     <script src="./vender/bootstrap/js/bootstrap.js "></script>
     <script src="./vender/bootstrap/js/bootstrap.bundle.min.js "></script>
     <script src="./vender/datepicker/datepicker.min.js"></script>
+
+    <!--Bak to up-->
+    <script src="./vender/jquery/backtoup.js"></script>
 
     <script type="text/javascript">
         $('[data-toggle="datepicker"]').datepicker({
@@ -418,8 +420,5 @@
     </script>
 </body>
 
-</html>
-
-</html>
 
 </html>

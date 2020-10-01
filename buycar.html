@@ -20,7 +20,7 @@
 <body>
 
     <!--Start Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
         <div class="container">
             <a class="navbar-brand" href="homepage.html"><span class="other">RIYASEWANA</span></a>
             <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,7 @@
         </div>
     </nav>
     <!--End Navbar -->
-    <br><br><br>
+
 
     <section class="name mt-5">
         <div class="container">
@@ -287,10 +287,10 @@
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold ">Useful links</h6>
                     <p>
-                        <a class="text-decoration-none" href="#!">Home</a>
+                        <a class="text-decoration-none" href="homepage.html">Home</a>
                     </p>
                     <p>
-                        <a class="text-decoration-none" href="#!">Post a Ad Free </a>
+                        <a class="text-decoration-none" href="addpost.html">Post a Ad Free </a>
                     </p>
                     <p>
                         <a class="text-decoration-none" href="#!">Contact us</a>
@@ -368,24 +368,20 @@
     </footer>
     <!--End Footer Section -->
 
-    <!-- <a href="#" class="scrollUp">
-        <i class="fa fa-chevron-up "></i> </a> -->
+    <!--Start back to up button-->
+    <a href="#" class="scrollUpButton">&#9650</a>
+    <!--End back to up button-->
 
     <script src="http://cdnjs.cloudflare.com/ajaxlibs/jquery/3.4.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajaxlibs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./vender/jquery/jquery.min.js "></script>
     <script src="./vender/bootstrap/js/bootstrap.js "></script>
     <script src="./vender/bootstrap/js/bootstrap.bundle.min.js "></script>
-    <script>
-        const scrollUp = document.querySelector('.scrollUp');
-        window.addEventListener('scroll', () => {
-            if (window.pageYoffset > 50) {
-                scrollUp.classList.add("active");
-            } else {
-                scrollUp.classList.remove("active");
-            }
-        });
-    </script>
+
+    <!--Bak to up-->
+    <script src="./vender/jquery/backtoup.js"></script>
+
+    <!--Copy Right Date-->
     <script>
         $('#year').text(new Date().getFullYear());
 
