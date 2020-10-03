@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+body {
+    background-color: #6363630c;
+}
+
 hr {
     background-color: rgb(0, 162, 255);
 }
@@ -73,21 +77,23 @@ hr {
     margin: 100px 0;
     height: auto;
     text-align: center;
+    margin-top: 50px;
+
 }
 
 .about-sec h1 {
     font-size: 3rem;
-    font-weight: 900;
-    font-family: 'Abril Fatface', cursive;
-    color: rgba(177, 43, 43, 0.747);
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(0, 0, 0);
 }
 
 .about-sec hr {
-    background: #0000005b;
+    background: rgb(0, 162, 255);
 }
 
 .extra-div {
-    background: #fff;
+    background-color: #63636300;
     border: medium none;
     padding: 50px !important;
     border-radius: 3px;
@@ -165,6 +171,7 @@ hr {
     0% {
         background-position: -500%;
     }
+
     100% {
         background-position: 500%;
     }
@@ -226,11 +233,13 @@ hr {
 }
 
 @keyframes cardanimate {
+
     0%,
     80% {
         color: rgba(0, 0, 0, 0.404);
         text-shadow: none;
     }
+
     100% {
         color: #333;
         text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 40px rgb(0, 0, 0), 0 0 80px rgb(0, 0, 0), 0 0 120px rgb(0, 0, 0), 0 0 160px rgb(0, 0, 0);
@@ -294,6 +303,7 @@ hr {
     0% {
         background-position: -500%;
     }
+
     100% {
         background-position: 500%;
     }
@@ -440,12 +450,15 @@ hr {
     .Search-Sec .div-1 img {
         display: none;
     }
+
     .Search-Sec .div-2 h1 {
         font-size: 2rem;
     }
+
     .add-post-sec .div-1 h1 {
         font-size: 2rem;
     }
+
     .add-post-sec .div-1 p {
         font-size: 1rem;
     }
@@ -461,9 +474,11 @@ hr {
     .add-post-sec .div-1 h1 {
         font-size: 1.7rem;
     }
+
     .add-post-sec .div-1 p {
         font-size: 0.8rem;
     }
+
     .add-post-sec .div-1 {
         margin-top: 30px;
     }
@@ -506,11 +521,273 @@ hr {
 }
 
 .fom-sec .input_form .sumbutton .btn:hover {
-    color: #000000;
+    color: #ffffff;
     background: rgb(2, 210, 247);
     box-shadow: 0 0 20px 0rgba(0, 0, 0, 0, 0.3);
 }
 
 .fom-sec {
-    background-color: rgba(194, 190, 190, 0.089);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 105vh;
+
+}
+
+video#herovideo {
+    width: 100%;
+    opacity: 0.6;
+}
+
+.vidcontent {
+    position: absolute;
+    top: 350px;
+    text-align: left;
+}
+
+#vidBtn {
+    /* border: 1px solid rgb(255, 255, 255); */
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    text-decoration: none;
+    font-size: 1rem;
+    float: left;
+    background: rgb(0, 162, 255);
+    animation: shadow-pluse 2s infinite;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+@keyframes shadow-pluse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 162, 255, 0.452);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 162, 255, 0.144);
+    }
+}
+
+/*header text*/
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 3rem;
+}
+
+.header-h1,
+.header-h2 {
+    font-weight: 200;
+    margin: 0.4rem;
+}
+
+.vidcontent .header-h1 {
+    font-size: 4rem;
+}
+
+.vidcontent .header-h2 {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+/* Cursor */
+.txt-type>.txt {
+    border-right: 0.3rem solid rgb(0, 0, 0);
+}
+
+@media(max-width: 1250px) {
+    .vidcontent .header-text .header-h1 {
+        font-size: 3rem;
+        text-align: left;
+    }
+
+    #about-section {
+        margin-top: -120px;
+    }
+
+    .vidcontent {
+        top: 200px;
+    }
+
+    .vidcontent .header-text .header-h2 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+}
+
+@media(max-width: 1050px) {
+    .vidcontent .header-text .header-h1 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .vidcontent {
+        top: 200px;
+    }
+
+    .vidcontent .header-text .header-h2 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    #about-section {
+        margin-top: -210px;
+    }
+}
+
+@media(max-width: 840px) {
+    .vidcontent .header-text .header-h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .vidcontent {
+        top: 150px;
+    }
+
+    .vidcontent .header-text .header-h2 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    #about-section {
+        margin-top: -250px;
+    }
+}
+
+@media(max-width: 800px) {
+    .vidcontent .header-text .header-h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .vidcontent {
+        top: 100px;
+    }
+
+    .vidcontent .header-text .header-h2 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    #about-section {
+        margin-top: -350px;
+    }
+}
+
+@media(max-width: 600px) {
+    .vidcontent .header-text .header-h1 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .vidcontent {
+        top: 100px;
+    }
+
+    .vidcontent .header-text .header-h2 {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    #vidBtn {
+        font-size: 0.7rem;
+    }
+
+    #about-section {
+        margin-top: -450px;
+    }
+}
+
+@media(max-width: 500px) {
+    .vidcontent .header-h1 {
+        font-size: 2.5rem;
+    }
+
+    .vidcontent .header-h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.recent-vehicles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: -180px;
+    margin-bottom: -150px;
+    /* background: #0000002d; */
+}
+
+.recent-vehicles .box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: imganimate 20s linear infinite;
+    /* -webkit-box-reflect: below 0px linear-gradient(transparent,transparent, #0004); */
+}
+
+@keyframes imganimate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.recent-vehicles .box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+}
+
+.recent-vehicles .box span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#RECENTVEHICLES {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.cata h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+#buycar{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(0, 0, 0);
 }
