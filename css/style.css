@@ -18,8 +18,12 @@ hr {
     font-weight: 700;
 }
 
+.navbar{
+    background-color: rgb(0, 162, 255)!important;
+}
+
 .navbar .container .navbar-brand:hover {
-    color: rgb(0, 162, 255);
+    color: rgb(0, 0, 0);
 }
 
 .navbar .container .navbar-brand {
@@ -31,7 +35,7 @@ hr {
 }
 
 .navbar .container .nav-item .nav-link:hover {
-    color: rgb(0, 162, 255) !important;
+    color: rgb(0, 0, 0) !important;
 }
 
 
@@ -178,21 +182,34 @@ hr {
 }
 
 .Search-Sec .div-2 .search-sec-button a {
-    border: 1px solid rgb(2, 210, 247);
+    border: 1px solid rgb(0, 162, 255);
     border-radius: 100px;
     margin: 0 5px;
     padding: 12px 35px;
     outline: none;
-    color: rgb(2, 210, 247);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 162, 255);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
     text-decoration: none;
+    animation: search-btn 2s infinite;
 }
+
+@keyframes search-btn {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 162, 255, 0.452);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 162, 255, 0.144);
+    }
+}
+
 
 .Search-Sec .div-2 .search-sec-button a:hover {
     color: #000000;
-    background: rgb(2, 210, 247);
+    background: rgb(0, 162, 255);
     box-shadow: 0 0 20px 0rgba(0, 0, 0, 0, 0.3);
 }
 
@@ -223,8 +240,8 @@ hr {
 
 .card-group .card .card-body .card-sec-button a:hover {
     color: #000000;
-    background: rgb(2, 210, 247);
-    border-color: rgb(2, 210, 247);
+    background: rgb(0, 162, 255);
+    border-color: rgb(0, 162, 255);
     box-shadow: 0 0 20px 0rgba(0, 0, 0, 0, 0.3);
 }
 
@@ -310,21 +327,33 @@ hr {
 }
 
 .add-post-sec .div-1 .add-sec-button a {
-    border: 1px solid rgb(2, 210, 247);
+    border: 1px solid rgb(0, 162, 255);
     border-radius: 100px;
     margin: 0 5px;
     padding: 12px 35px;
     outline: none;
-    color: rgb(2, 210, 247);
+    background-color: rgb(0, 162, 255);
+    color: rgb(255, 255, 255);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
     text-decoration: none;
+    animation: add-btn 2s infinite;
 }
+@keyframes add-btn {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 162, 255, 0.452);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 162, 255, 0.144);
+    }
+}
+
 
 .add-post-sec .div-1 .add-sec-button a:hover {
     color: #000000;
-    background: rgb(2, 210, 247);
+    background: rgb(0, 162, 255);
     box-shadow: 0 0 20px 0rgba(0, 0, 0, 0, 0.3);
 }
 
@@ -491,7 +520,7 @@ hr {
     bottom: 10px;
     right: 10px;
     display: none;
-    background: rgb(2, 210, 247);
+    background: rgb(0, 162, 255);
     color: #fff;
     font-size: 1.5em;
     text-decoration: none;
@@ -507,22 +536,34 @@ hr {
 }
 
 .fom-sec .input_form .sumbutton .btn {
-    border: 1px solid rgb(2, 210, 247);
+    border: 1px solid rgb(0, 162, 255);
     border-radius: 100px;
     margin: 0 5px;
     padding: 12px 35px;
     outline: none;
-    color: rgb(2, 210, 247);
+    background-color: rgb(0, 162, 255);
+    color: rgb(255, 255, 255);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
     text-decoration: none;
     font-size: 1rem;
+    animation: form-btn 2s infinite;
+}
+
+@keyframes form-btn {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 162, 255, 0.452);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 162, 255, 0.144);
+    }
 }
 
 .fom-sec .input_form .sumbutton .btn:hover {
-    color: #ffffff;
-    background: rgb(2, 210, 247);
+    color: #000000;
+    background: rgb(0, 162, 255);
     box-shadow: 0 0 20px 0rgba(0, 0, 0, 0, 0.3);
 }
 
@@ -567,6 +608,11 @@ video#herovideo {
     animation: shadow-pluse 2s infinite;
     margin-left: 50px;
     margin-top: 10px;
+}
+#vidBtn:hover {
+    color: #000000;
+    background: rgb(0, 162, 255);
+    box-shadow: 0 0 20px 0rgba(0, 0, 0, 0, 0.3);
 }
 
 @keyframes shadow-pluse {
